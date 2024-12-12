@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="formValidasi">
+        <h2>Form Validasi</h2>
+        <label for="nama">Nama Pelanggan:</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama anda">
+        <span class="error" id="namaError"></span><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" placeholder="Masukkan email anda">
+        <span class="error" id="emailError"></span><br><br>
+
+        <label for="jam">Jam Keberangkatan:</label><br>
+        <input type="text" id="jam" name="jam" placeholder="00.00 - 23.59">
+        <span class="error" id="jamError"></span><br><br>
+
+        <label for="tujuan">Tujuan Keberangkatan:</label><br>
+        <input type="text" id="tujuan" name="tujuan" placeholder="Masukkan tujuan anda">
+        <span class="error" id="tujuanError"></span><br><br>
+
+        <label for="tiket">Jumlah Tiket:</label><br>
+        <input type="number" id="tiket" name="tiket" placeholder="1-10 tiket">
+        <span class="error" id="tiketError"></span><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <div id="output" class="success" style="display: none;"></div>
+
+    <script src="./validasi.js"></script>
+</body>
+</html>
